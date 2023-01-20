@@ -29,7 +29,7 @@ const LobbyAgencyAssistence = () => {
         </Card>
         <Card>
           <img src={Client} alt="client icon" />
-          <p>Levar clientes que tem interesse no seu negócio</p>
+          <p>Atrair clientes que tem interesse no seu negócio</p>
         </Card>
         <Card>
           <img src={Money} alt="doc icon" />
