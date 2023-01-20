@@ -1,5 +1,5 @@
 import { HeaderContainer, Logo } from "./styles";
-import logo from "./images/Logo.png";
+import logo from "./images/Logo2.png";
 
 const Header = () => {
   return (

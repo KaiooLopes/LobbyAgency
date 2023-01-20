@@ -6,7 +6,15 @@ export const IntroductionContainer = styled.div`
   background-color: #0081c9;
   display: flex;
   overflow: hidden;
-  background: linear-gradient(rgba(0, 129, 201, 0.8), rgba(0, 129, 201, 0.8)),
+  position: relative;
+  padding-bottom: 40px;
+  background: radial-gradient(
+      circle,
+      rgba(95, 32, 172, 0.5) 0%,
+      rgba(78, 37, 128, 0.5) 0%,
+      rgba(84, 35, 144, 0.5) 37%,
+      rgba(40, 18, 66, 0.5) 100%
+    ),
     url(${bg});
   background-position: center;
   background-size: cover;
@@ -63,7 +71,7 @@ export const Arrow = styled.button`
   bottom: 5px;
   left: ${(props) => `${props.left}`};
   right: ${(props) => `${props.right}`};
-  color: #ffc93c;
+  color: #ffa41b;
   font-size: 30px;
   background-color: transparent;
   border: none;

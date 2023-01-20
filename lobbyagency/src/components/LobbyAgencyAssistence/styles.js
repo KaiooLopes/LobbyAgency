@@ -6,14 +6,15 @@ export const LobbyAgencyAssistenceContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #ffc93c;
-  padding: 20px 0;
+  background-color: #eeeeee;
+  padding: 60px 0 20px;
+  position: relative;
   h1 {
-    font-weight: normal;
-    color: #0081c9;
-    text-transform: uppercase;
+    color: black;
+    font-family: "Inter";
     font-size: 25px;
-    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
     text-align: center;
   }
 
@@ -39,9 +40,8 @@ export const CardsContainer = styled.div`
 `;
 export const Card = styled.div`
   display: flex;
-
   flex-direction: column;
-  justify-content: center;
+  justify-content: bottom;
   align-items: center;
 
   text-align: center;
@@ -61,5 +61,48 @@ export const Card = styled.div`
       width: 200px;
     }
     margin: 0 10px;
+  }
+`;
+
+export const Button = styled.div`
+  left: 0;
+  right: 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+
+  @media (min-width: 720px) {
+    top: -40px;
+  }
+  a {
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #965bf4;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+    color: white;
+    transition: 0.4s;
+    animation: pulseAnimation infinite linear alternate 2s;
+
+    @keyframes pulseAnimation {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
+
+    &:hover {
+      background-color: #6c2cd4;
+    }
+
+    @media (min-width: 720px) {
+      padding: 25px 35px;
+    }
   }
 `;

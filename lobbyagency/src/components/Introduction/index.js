@@ -9,9 +9,8 @@ const Introduction = () => {
       <Article showArticle={showArticle}>
         <div>
           <h3 align="left">
-            Precisa de mais clientes? Quer aumentar as vendas? Parar de gastar
-            dinheiro com panfletos que não trazem clientes? Então está no lugar
-            certo!
+            Quer que seu negócio seja visto por muitos clientes qualificados e
+            interessados? Se sim, você está no lugar certo!
           </h3>
           <Arrow
             left={"auto"}
@@ -24,10 +23,10 @@ const Introduction = () => {
       </Article>
       <Article showArticle={showArticle}>
         <div>
-          <h3 align="right">
-            Ajudamos óticas e joalherias a aumentar seu faturamento com escala e
-            previsibilidade na internet com um sistema de anúncios online que
-            nos permite trazer o cliente até a porta da sua loja
+          <h3 align="left">
+            Ajudamos empresas á ampliar seu faturamento e escalar seus
+            resultados utilizando ferramentas que te aproximam do seu
+            público-alvo.
           </h3>
           <Arrow
             left={"14px"}

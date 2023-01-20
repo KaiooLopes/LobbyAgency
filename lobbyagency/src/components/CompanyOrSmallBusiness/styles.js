@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CompanyOrSmallBusinessContainer = styled.div`
-  background-color: #ffc93c;
+  background-color: #eeeeee;
   display: flex;
   flex-direction: column;
 `;
@@ -14,11 +14,11 @@ export const OptionCompany = styled.div`
   display: flex;
 
   p:nth-of-type(1) {
-    color: ${(props) => (!props.option ? "#0081C9" : "#5D5D5D")};
+    color: ${(props) => (!props.optionEl ? "#4e2580" : "#5F5F5F")};
     text-align: right;
   }
   p:nth-of-type(2) {
-    color: ${(props) => (props.option ? "#0081C9" : "#5D5D5D")};
+    color: ${(props) => (props.optionEl ? "#4e2580" : "#5F5F5F")};
   }
   p {
     width: 50%;
@@ -33,7 +33,7 @@ export const SelectContainer = styled.div`
   min-width: 20px;
   height: 35px;
   border-radius: 50px;
-  background-color: #0081c9;
+  background-color: #6c2cd4;
   display: flex;
   align-items: center;
   padding: 0 7px;
@@ -42,10 +42,10 @@ export const SelectContainer = styled.div`
   div {
     width: 50%;
     height: 70%;
-    background-color: #86e5ff;
+    background-color: white;
     transition: 0.4s;
     transform: ${(props) =>
-      props.option ? "translateX(100%)" : "translateX(0)"};
+      props.optionEl ? "translateX(100%)" : "translateX(0)"};
     border-radius: 100px;
   }
 `;
@@ -61,7 +61,7 @@ export const OptionResume = styled.div`
 
   P {
     color: white;
-    background-color: #0081c9;
+    background-color: #6c2cd4;
     padding: 20px;
     border-radius: 20px;
   }

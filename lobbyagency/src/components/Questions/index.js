@@ -4,27 +4,32 @@ const Questions = () => {
   return (
     <QuestionsContainer>
       <Question align="left">
-        <p>Como nós trabalhamos?</p>
+        <p>Como funciona a gestão de trafego no método lobby?</p>
       </Question>
       <Question align="right">
         <p>
-          nós desenvolvemos anúncios de alta conversão dentro das maiores
-          plataformas sociais do mundo que com INTELIGENCIA ARTIFICIAL monitoram
-          o comportamento dos usuários e assim nós segmentamos os anúncios
-          somente para o público QUE PRECISA OU TEM interesse no seu produto
+          Desenvolvemos anúncios patrocinados de forma detalhada e estratégica
+          utilizando ferramantes das maiores plataformas de anúncios e redes
+          sociais do mundo, que analisam e armazenam o comportamento e o
+          interesse de seus usuários baseado nas pesquisas e nos conteúdos
+          consumidos por eles. Dessa maneira conseguimos enviar anúncios de
+          maneira extremamente direcionada para o público-alvo do seu negócio,
+          aumentando exponencialmente sua taxa de conversão e assim facilitando
+          para que você alcance seus objetivos.
         </p>
       </Question>
       <Question align="left">
-        <p>por que isso é revolucionário?</p>
+        <p>Como funciona nosso processo?</p>
       </Question>
       <Question align="right">
         <p>
-          Usando essa metodologia atingimos apenas uma audiência qualificada
-          para a compra, diferente da panfletagem e os outros modos obsoletos de
-          propaganda que é impossível de fazer essa segmentação Então por
-          exemplo se você vende ração de cachorro nos nao vamos mostrar seu
-          anúncio para quem tem gatos, pois eles não têm interesse no seu
-          produto
+          Nós iremos desenvolver uma estratégia de crescimento constante para
+          que seu negócio seja visto por um número cada vez maior de pessoas
+          interessadas, aumentando assim, seu faturamento. Através de nossos
+          relatórios quinzenais, em que compartilhamos os resultados que
+          obtivemos através dos anúncios criados, você estará por dentro do que
+          está sendo feito pela nossa empresa, permitindo que você possa opinar
+          caso algo fuja do que você esperava, garantindo assim sua satisfação.
         </p>
       </Question>
     </QuestionsContainer>
