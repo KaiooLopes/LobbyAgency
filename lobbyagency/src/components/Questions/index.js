@@ -9,7 +9,7 @@ const Questions = () => {
       <Question align="right">
         <p>
           Desenvolvemos anúncios patrocinados de forma detalhada e estratégica
-          utilizando ferramantes das maiores plataformas de anúncios e redes
+          utilizando ferramentas das maiores plataformas de anúncios e redes
           sociais do mundo, que analisam e armazenam o comportamento e o
           interesse de seus usuários baseado nas pesquisas e nos conteúdos
           consumidos por eles. Dessa maneira conseguimos enviar anúncios de
