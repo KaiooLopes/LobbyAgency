@@ -1,21 +1,22 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Pillar, PillarsContainer, BodyPillars, IconArrow } from "./styles";
 
 const Pillars = () => {
   const ref = useRef(null);
   const [showDiv, setShowDiv] = useState(false);
-  useEffect(() => {
-    if (ref) {
-      window.addEventListener("scroll", ShowSection);
-    }
-  }, [ref]);
 
-  const ShowSection = () => {
+  const ShowSection = useCallback(() => {
     if (ref.current.getBoundingClientRect().top < 400) {
       setShowDiv(true);
       window.removeEventListener("scroll", ShowSection);
     }
-  };
+  }, []);
+
+  useEffect(() => {
+    if (ref) {
+      window.addEventListener("scroll", ShowSection);
+    }
+  }, [ref, ShowSection]);
 
   return (
     <PillarsContainer ref={ref}>
