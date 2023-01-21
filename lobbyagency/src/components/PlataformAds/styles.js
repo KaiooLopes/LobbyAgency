@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const PlataformAdsContainer = styled.div`
   background-color: #eeeeee;
-  padding: 70px 20px;
+  padding: 90px 20px;
   display: flex;
   flex-direction: column;
   font-size: 18px;
@@ -72,48 +72,53 @@ export const Plataform = styled.div`
 export const Button = styled.div`
   left: 0;
   right: 0;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   position: absolute;
-  top: -60px;
+  top: -70px;
+  font-family: "Inter";
 
-  @media (max-width: 353px) {
-    top: -80px;
-  }
-
-  @media (min-width: 595px) {
-    top: -35px;
-  }
-
-  @media (min-width: 720px) {
-    top: -50px;
-  }
-  a {
-    padding: 5px;
-    text-decoration: none;
-    background-color: #965bf4;
-    border: none;
-    font-size: 20px;
-    text-align: center;
-    border-bottom: 9px solid #7137cd;
-    border-right: 9px solid #571eb1;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.4s;
+  span {
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #42bb51;
+    transition: transform 0.2s;
+    transform: translateY(-7px);
 
     &:hover {
-      background-color: #6423cb;
+      transform: translateY(-10px);
+    }
+  }
+
+  a {
+    font-size: 20px;
+    transform: translateY(7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    background-color: #32923d;
+    border: none;
+    border-radius: 10px;
+    color: white;
+  }
+
+  @media (min-width: 550px) {
+    top: -40px;
+  }
+  @media (min-width: 720px) {
+    top: -40px;
+
+    span {
+      padding: 20px;
     }
 
-    &:active {
-      border-bottom: 6px solid #6423cb;
-      border-right: 6px solid #6423cb;
-    }
-
-    @media (min-width: 720px) {
-      padding: 20px 30px;
+    a {
+      font-size: 25px;
     }
   }
 `;

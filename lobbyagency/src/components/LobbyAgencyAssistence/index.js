@@ -18,7 +18,7 @@ const LobbyAgencyAssistence = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Quero Vender Mais
+          <span>Quero Vender Mais!</span>
         </a>
       </Button>
       <h1>A Lobby Agency é especializada em:</h1>

@@ -32,7 +32,7 @@ const PlataformAds = () => {
           target="_blank"
           rel="noreferrer"
         >
-          Quero aumentar as vendas da minha empresa!
+          <span>Quero aumentar as vendas da minha empresa!</span>
         </a>
       </Button>
     </PlataformAdsContainer>

@@ -73,32 +73,39 @@ export const Button = styled.div`
   justify-content: center;
   position: absolute;
   top: -30px;
+  font-family: "Inter";
 
-  a {
-    text-decoration: none;
-    padding: 10px 30px;
-    background-color: #965bf4;
-    border: none;
-    border-bottom: 9px solid #7137cd;
-    border-right: 9px solid #571eb1;
-    font-size: 25px;
-    color: white;
-    transition: background-color 0.2s;
+  span {
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #42bb51;
+    transition: transform 0.2s;
+    transform: translateY(-7px);
 
     &:hover {
-      background-color: #6423cb;
-    }
-
-    &:active {
-      border-bottom: 6px solid #6423cb;
-      border-right: 6px solid #6423cb;
-    }
-
-    @media (min-width: 720px) {
-      padding: 25px 35px;
+      transform: translateY(-10px);
     }
   }
+
+  a {
+    transform: translateY(7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    background-color: #32923d;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    color: white;
+  }
   @media (min-width: 720px) {
-    top: -50px;
+    top: -40px;
+
+    span {
+      padding: 20px;
+    }
   }
 `;
