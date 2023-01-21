@@ -110,8 +110,9 @@ export const IconArrow = styled.i`
   }
 
   ${(props) =>
-    props.showDiv ? `animation: 2s linear 2s infinite alternate-reverse;` : ""};
-  animation-name: ${(props) => props.nameAnimation};
+    props.showDiv
+      ? `animation:${props.nameAnimation} 2s linear 2s infinite alternate-reverse;`
+      : ""};
 
   @media (min-width: 1024px) {
     transform: rotate(0);

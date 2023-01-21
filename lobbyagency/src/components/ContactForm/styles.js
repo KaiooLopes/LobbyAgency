@@ -14,8 +14,9 @@ export const ContactFormContainer = styled.div`
   h3 {
     font-size: 25px;
     text-align: center;
-    padding: 10px 10px 20px;
+    padding: 10px;
     color: white;
+    margin: 0;
     font-family: "Inter";
   }
 `;

@@ -66,6 +66,7 @@ const ContactForm = () => {
   return (
     <ContactFormContainer>
       <h3>Quer aumentar suas vendas e escalar seu negócio?</h3>
+      <h3>Entre em contato agora!</h3>
       <SocialMidia>
         <a
           href="https://wa.me/53984737286?text=Oii, quero aumentar as vendas do meu negocio!!!"
