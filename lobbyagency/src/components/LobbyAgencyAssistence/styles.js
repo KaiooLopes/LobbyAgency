@@ -72,37 +72,33 @@ export const Button = styled.div`
   display: flex;
   justify-content: center;
   position: absolute;
-  top: -25px;
+  top: -30px;
 
-  @media (min-width: 720px) {
-    top: -40px;
-  }
   a {
     text-decoration: none;
     padding: 10px 30px;
     background-color: #965bf4;
     border: none;
-    border-radius: 20px;
+    border-bottom: 9px solid #7137cd;
+    border-right: 9px solid #571eb1;
     font-size: 25px;
     color: white;
-    transition: 0.4s;
-    animation: pulseAnimation infinite linear alternate 2s;
-
-    @keyframes pulseAnimation {
-      0% {
-        transform: scale(1);
-      }
-      100% {
-        transform: scale(1.1);
-      }
-    }
+    transition: background-color 0.2s;
 
     &:hover {
-      background-color: #6c2cd4;
+      background-color: #6423cb;
+    }
+
+    &:active {
+      border-bottom: 6px solid #6423cb;
+      border-right: 6px solid #6423cb;
     }
 
     @media (min-width: 720px) {
       padding: 25px 35px;
     }
+  }
+  @media (min-width: 720px) {
+    top: -50px;
   }
 `;

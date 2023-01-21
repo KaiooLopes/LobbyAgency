@@ -26,13 +26,48 @@ export const BodyPillars = styled.div`
     align-items: stretch;
     justify-content: center;
   }
+
+  div:nth-child(5) {
+    --border-size: 3px;
+    --border-angle: 0turn;
+
+    background-image: conic-gradient(
+        from var(--border-angle),
+        #6c2cd4,
+        #6c2cd4 50%,
+        #6c2cd4
+      ),
+      conic-gradient(
+        from var(--border-angle),
+        transparent 20%,
+        #34109b,
+        #34109b
+      );
+    background-size: calc(98% - (var(--border-size) * 2))
+        calc(98% - (var(--border-size) * 2)),
+      cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    animation: bg-spin 3s linear infinite;
+    @keyframes bg-spin {
+      to {
+        --border-angle: 1turn;
+      }
+    }
+
+    @property --border-angle {
+      syntax: "<angle>";
+      inherits: true;
+      initial-value: 0turn;
+    }
+  }
 `;
 
 export const Pillar = styled.div`
   background-color: #6c2cd4;
   text-align: center;
   color: white;
-  border-radius: 20px;
   max-width: 500px;
   padding: 20px;
   h3 {
@@ -58,32 +93,24 @@ export const IconArrow = styled.i`
   opacity: ${(props) => (props.showDiv ? "1" : "0")};
 
   @keyframes animationIconLeft {
-    0% {
+    from {
       opacity: 1;
     }
-    20% {
+    to {
       opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
     }
   }
   @keyframes animationIconRight {
-    0% {
-      opacity: 1;
-    }
-
-    80% {
+    from {
       opacity: 0;
     }
-
-    100% {
+    to {
       opacity: 1;
     }
   }
 
-  ${(props) => (props.showDiv ? `animation: 2s linear 2s infinite;` : "")};
+  ${(props) =>
+    props.showDiv ? `animation: 2s linear 2s infinite alternate-reverse;` : ""};
   animation-name: ${(props) => props.nameAnimation};
 
   @media (min-width: 1024px) {

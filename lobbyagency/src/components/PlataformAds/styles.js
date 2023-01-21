@@ -88,32 +88,28 @@ export const Button = styled.div`
   }
 
   @media (min-width: 720px) {
-    top: -40px;
+    top: -50px;
   }
   a {
     padding: 5px;
     text-decoration: none;
     background-color: #965bf4;
     border: none;
-    border-radius: 20px;
     font-size: 20px;
     text-align: center;
+    border-bottom: 9px solid #7137cd;
+    border-right: 9px solid #571eb1;
     color: white;
     cursor: pointer;
-    transition: 0.4s;
-    animation: pulseAnimation infinite linear alternate 2s;
-
-    @keyframes pulseAnimation {
-      0% {
-        transform: scale(1);
-      }
-      100% {
-        transform: scale(1.05);
-      }
-    }
+    transition: background-color 0.4s;
 
     &:hover {
-      background-color: #6c2cd4;
+      background-color: #6423cb;
+    }
+
+    &:active {
+      border-bottom: 6px solid #6423cb;
+      border-right: 6px solid #6423cb;
     }
 
     @media (min-width: 720px) {
