@@ -10,7 +10,7 @@ export const QuestionsContainer = styled.div`
       rgba(40, 18, 66, 0.5) 100%
     ),
     url(${bg});
-  background-position: center;
+  background-position: 0 21%;
   background-size: cover;
   display: flex;
   flex-direction: column;

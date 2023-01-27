@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  background-color: #6c2cd4;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   padding: 5px 0;
@@ -14,6 +14,6 @@ export const Logo = styled.div`
   align-items: center;
   width: 200px;
   img {
-    width: 100%;
+    width: 80%;
   }
 `;

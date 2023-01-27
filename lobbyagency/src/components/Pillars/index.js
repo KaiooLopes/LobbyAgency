@@ -22,7 +22,7 @@ const Pillars = () => {
     <PillarsContainer ref={ref}>
       <h1>Nossos Pilares</h1>
       <BodyPillars>
-        <Pillar delay="0.5" showDiv={showDiv}>
+        <Pillar delay=".5" showDiv={showDiv}>
           <h3>Capturar</h3>
           <p>
             Capture seu público-alvo por meio de campanhas digitais
@@ -33,11 +33,11 @@ const Pillars = () => {
         </Pillar>
         <IconArrow
           className="fa-solid fa-angles-right"
-          delay="0.7"
+          delay="1.1"
           showDiv={showDiv}
           nameAnimation={"animationIconLeft"}
         ></IconArrow>
-        <Pillar delay="0.9" showDiv={showDiv}>
+        <Pillar delay="1.7" showDiv={showDiv}>
           <h3>Reter</h3>
           <p>
             Retenha seu público enquanto eles navegam em seu conteúdo.
@@ -48,11 +48,11 @@ const Pillars = () => {
         </Pillar>
         <IconArrow
           className="fa-solid fa-angles-right"
-          delay="1.1"
+          delay="2.3"
           showDiv={showDiv}
           nameAnimation={"animationIconRight"}
         ></IconArrow>
-        <Pillar delay="1.3" showDiv={showDiv}>
+        <Pillar delay="2.9" showDiv={showDiv}>
           <h3>Converter</h3>
           <p>
             Converta visitantes em leads valiosos e em novos clientes. O

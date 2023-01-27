@@ -92,28 +92,6 @@ export const IconArrow = styled.i`
   transition: opacity 0.8s ${(props) => `${props.delay}s`};
   opacity: ${(props) => (props.showDiv ? "1" : "0")};
 
-  @keyframes animationIconLeft {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
-  @keyframes animationIconRight {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  ${(props) =>
-    props.showDiv
-      ? `animation:${props.nameAnimation} 2s linear 2s infinite alternate-reverse;`
-      : ""};
-
   @media (min-width: 1024px) {
     transform: rotate(0);
     margin: auto 0;
